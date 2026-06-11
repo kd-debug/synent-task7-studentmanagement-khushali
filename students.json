@@ -1,0 +1,42 @@
+[
+  {
+    "id": 2,
+    "name": "Khushali Patel",
+    "email": "khushali@gmail.com",
+    "course": "B.Tech (Mechanical)",
+    "year": 3,
+    "gpa": 6.44,
+    "grade": "C",
+    "enrollment_date": "2026-06-11T15:07:22.725105"
+  },
+  {
+    "id": 3,
+    "name": "Jignesh",
+    "email": "jignesh@gmail.com",
+    "course": "BCA",
+    "year": 2,
+    "gpa": 7.88,
+    "grade": "B",
+    "enrollment_date": "2026-06-11T15:18:22.937947"
+  },
+  {
+    "id": 4,
+    "name": "Vishva",
+    "email": "xyz@gmail.com",
+    "course": "B.sc",
+    "year": 1,
+    "gpa": 8.44,
+    "grade": "A",
+    "enrollment_date": "2026-06-11T15:19:25.740809"
+  },
+  {
+    "id": 5,
+    "name": "Meghna",
+    "email": "dhv@gmail.com",
+    "course": "B.sc",
+    "year": 2,
+    "gpa": 7.77,
+    "grade": "B",
+    "enrollment_date": "2026-06-11T15:19:59.379862"
+  }
+]
