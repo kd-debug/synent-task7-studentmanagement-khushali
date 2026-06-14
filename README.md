@@ -1,17 +1,16 @@
-# Professional Student Management System
+# EduTrack Pro - Academic Record Manager
 
-A modern, creative, and efficient Student Management System built with **FastAPI** and a clean, professional **Tailwind CSS** frontend. This application provides robust features for managing student records with real-time updates and Python-driven analytics.
+EduTrack Pro is a modern, creative, and efficient Academic Record Management System built with **FastAPI** and a clean, professional **Tailwind CSS** frontend. This application provides robust features for managing student records with real-time updates and Python-driven analytics.
 
 ## 🚀 Key Features
 
 ### 📊 Core Management
-- **Add, Update, & Delete**: Full CRUD operations for student records.
+- **Add, Update, & Delete**: Full CRUD operations for academic records.
 - **Dynamic Course Selection**: Dropdown with various academic courses (BCA, BBA, B.Tech, etc.).
 - **Real-time Statistics**: Instant dashboard updates for total students, average CGPA, and course distribution.
 
 ### 🧠 Python-Powered Intelligence
 - **Automated Grade Classification**: Python logic automatically assigns grades (A+, A, B, C, D, F) based on CGPA.
-- **Top Performers Analytics**: Real-time identification of high-achieving students (CGPA > 8.5).
 - **Search-Based Filtering**: Search across names, emails, and courses with immediate UI feedback.
 
 ### 📥 Data Operations

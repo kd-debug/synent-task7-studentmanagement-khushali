@@ -56,7 +56,9 @@ templates = Jinja2Templates(directory="templates")
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
     students = load_students()
-    return templates.TemplateResponse("index.html", {"request": request, "students": students})
+    return templates.TemplateResponse(
+        request=request, name="index.html", context={"students": students}
+    )
 
 
 @app.get("/api/students")
@@ -172,8 +174,7 @@ async def get_statistics():
             "total": 0,
             "avg_gpa": 0,
             "courses": {},
-            "years": {},
-            "top_performers": []
+            "years": {}
         }
     total = len(students)
     avg_gpa = sum(s["gpa"] for s in students) / total
@@ -183,15 +184,11 @@ async def get_statistics():
         courses[s["course"]] = courses.get(s["course"], 0) + 1
         years[s["year"]] = years.get(s["year"], 0) + 1
     
-    # Python-driven analytics: Top Performers (CGPA > 8.5)
-    top_performers = sorted([s for s in students if s["gpa"] > 8.5], key=lambda x: x["gpa"], reverse=True)[:5]
-    
     return {
         "total": total,
         "avg_gpa": round(avg_gpa, 2),
         "courses": courses,
-        "years": years,
-        "top_performers": top_performers
+        "years": years
     }
 
 
